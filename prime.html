@@ -9,3 +9,22 @@
         <button onclick="prime()">prime</button>
     </body>
 </html>
+<script>
+    var a=document.getElementById('t1').value;
+    if(a<0){
+        document.getElementById('res').innerHTML=" not prime no";
+    }
+    else if(a<=3){
+        document.getElementById('res').innerHTML="prime no";
+    }
+    else{
+        for(i=2;i<=a;i++){
+            if(a%2==0){
+                document.getElementById('res').innerHTML=" not prime no"; 
+            }
+            else{
+                document.getElementById('res').innerHTML=" prime no"; 
+            }
+        }
+    }
+</script>
